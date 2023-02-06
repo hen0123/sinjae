@@ -1,0 +1,49 @@
+.a{
+    margin: 100px 0px 0px 450px;
+    width: 600px;
+}
+
+
+.course1{
+       margin: 100px 0px 0px 450px;
+    width: 600px;
+}
+
+#img1{
+    height: 200px;
+}
+
+.mainimg{
+    width: 35%;
+    height: 35%;
+    margin: 0 auto;
+    display: block;
+}
+.nav-item{
+    display: flex;
+
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.container my-3{
+    margin: 0 auto;
+}
+
+.mb-3{
+    width: 50%;
+    margin: 0 auto;
+}
+
+div.btns {
+    margin: 0 auto;
+    text-align: center;
+
+
+}
+.btn btn-primary{
+    width: 125px;
+    height: 75px;
+    display: inline-block;
+}
+

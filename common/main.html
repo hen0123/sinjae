@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% extends 'base.html' %}
+{% block content %}
+<p style="text-align:right">
+    {% if user.is_authenticated %}
+        <a href="{% url 'common:logout' %}">로그아웃</a>
+    {% else %}
+        <a href="{% url 'common:login' %}">로그인</a>
+    {% endif %}
+
+    <img src="../static/사람사진.png" alt="..." id="img2">
+</p>
+<div class="a">
+    <div class="text-center" id="masil">
+        <img src="../static/마실가자.png" alt="...">
+    </div>
+        <form action="#" method="" id="search">
+            <div class="input-group mt-3">
+                <input  name="" type="text" class="form-control" placeholder="검색어 입력">
+                <button class="btn btn-success" type="submit">검색</button>
+            </div>
+        </form>
+        <div style="margin: 30px 0px 0px 0px;">
+            <div class="btn btn-success btn-lg" style="width:140px; height:80px;" >테마</div>
+            <a href="{% url 'cal:calendar' %}"><div class="btn btn-success btn-lg" style="width:140px; height:80px;">동행</div></a>
+            <a href="{% url 'pybo:board' %}"><div class="btn btn-success btn-lg" style="width:140px; height:80px;">게시판</div></a>
+            <div class="btn btn-success btn-lg" style="width:140px; height:80px;">채팅</div>
+        </div>
+</div>
+{% endblock %}
+</body>
+</html>
