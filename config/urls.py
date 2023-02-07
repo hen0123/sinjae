@@ -25,4 +25,5 @@ urlpatterns = [
     path('pybo/', include('pybo.urls')),
     path('', views.index, name='index'),
     path(r'^calendar/$', include('cal.urls')),
+    path('map/', include('map.urls')),
 ]
