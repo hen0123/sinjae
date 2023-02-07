@@ -3,6 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script
+	src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+<script>
+	$(document).ready(function() {
+		$('.slider').bxSlider({
+			auto : true,
+			speed : 1000,
+			pause : 2500,
+			mode : 'fade',
+			pager : true,
+			autoHover : true,
+		});
+	});
+</script>
+
 </head>
 <body>
 {% extends 'base.html' %}
@@ -14,7 +34,7 @@
         <a href="{% url 'common:login' %}">로그인</a>
     {% endif %}
     {% if not user.is_authenticated %}
-        <a class="nav-link" href="{% url 'common:signup' %}">회원가입</a>
+        <a class="nav-link" href="{% url 'common:signup' %}" style="display:inline">회원가입</a>
     {% endif %}
     <img src="../static/사람사진.png" alt="..." id="img2">
 </p>
@@ -28,6 +48,15 @@
                 <button class="btn btn-success" type="submit">검색</button>
             </div>
         </form>
+        <div class="slider">
+		<div><img src="static/image/main_banner_1.jpg" /></div>
+		<div><img src="static/image/main_banner_2.jpg" /></div>
+		<div><img src="static/image/main_banner_3.gif" /></div>
+		<div><img src="static/image/main_banner_4.gif" /></div>
+		<div><img src="static/image/main_banner_5.gif" /></div>
+		<div><img src="static/image/main_banner_6.gif" /></div>
+	</div>
+
         <div style="margin: 30px 0px 0px 0px;">
             <div class="btn btn-success btn-lg" style="width:140px; height:80px;" >테마</div>
             <a href="{% url 'cal:calendar' %}"><div class="btn btn-success btn-lg" style="width:140px; height:80px;">동행</div></a>

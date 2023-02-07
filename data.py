@@ -1,10 +1,10 @@
 import os
-import django
-import json
 os.environ.setdefault("DJANGO_SETTINGS_MODULE","config.settings")
 
+import django
 django.setup() # cmd python manage.py shell
 
+import json
 from pybo.models import Thema,Path
 
 theme = ['한양도성길', '생태문화길', '한강지천길/계절길', '서울둘레길']
