@@ -5,7 +5,10 @@ from .forms import QuestionForm
 from django.core.paginator import Paginator
 
 def course(request):
-    return render(request, 'pybo/course.html')
+    return render(request, 'pybo/course1.html')
+
+def course1(request):
+    return render(request, 'course/course.html')
 
 def board(request):
     page = request.GET.get('page', '1')  # 페이지

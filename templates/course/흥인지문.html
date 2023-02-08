@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   /head>
+  <body>
+
+    {% block content %}
+    <a href="{% url 'index' %}"><img src="../../static/마실가자.png" alt="..." style="width:200px;"></a>
+    <a href="{% url 'tema:tema1' %}"><div class="btn btn-secondary btn-lg" style="display:block; margin: 10px 0px 0px 10px; width:100px; height:45px;">< prev</div>
+    </a>
+        <div style ="margin:auto">
+        <div id='map' style="width:750px; margin:auto;">
+            {{map|safe}}
+        </div>
+    </div>
+    {% endblock %}
+  </body>
+</html>
+

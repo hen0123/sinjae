@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% extends 'base.html' %}
+{% block content %}
+<p>
+    <a href="{% url 'common:main' %}"><img src="../../static/마실가자.png" alt="..." style="width:200px;"></a>
+</p>
+
+<div style=" margin: 100px 0px 0px 410px;">
+    <div class="btn btn-lg" style="width:180px; height:80px; margin-right: 40px; background-color:#8FBC8F; color:white" >구간</div>
+    <div class="btn btn-lg" style="width:180px; height:80px; margin-right: 40px; background-color:#8FBC8F; color:white">구간</div>
+    <div class="btn btn-lg" style="width:180px; height:80px; margin-right: 40px; background-color:#8FBC8F; color:white">구간</div>
+</div>
+<div>
+    <a href="{% url 'tema:tema2' %}"><div class="btn btn-secondary btn-lg" style="margin: 0px 0px 0px 200px">테마2</div></a>
+    <a href="{% url 'tema:tema4' %}"><div class="btn btn-secondary btn-lg" style="margin: 0px 0px 0px 850px">테마4</div></a>
+</div>
+<div style="margin: 0px 0px 0px 410px;">
+    <div class="btn btn-lg" style="width:180px; height:80px; margin-right: 40px; background-color:#8FBC8F; color:white">구간</div>
+    <div class="btn btn-lg" style="width:180px; height:80px; margin-right: 40px; background-color:#8FBC8F; color:white">구간</div>
+    <div class="btn btn-lg" style="width:180px; height:80px; margin-right: 40px; background-color:#8FBC8F; color:white">구간</div>
+</div>
+{% endblock %}
+</body>
+</html>

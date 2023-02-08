@@ -31,6 +31,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'course.apps.CourseConfig',
+    'tema.apps.TemaConfig',
     'cal.apps.CalConfig',
     'pybo.apps.PyboConfig',
     'common.apps.CommonConfig',
@@ -40,7 +42,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'map.apps.MapConfig',
 ]
 
 MIDDLEWARE = [

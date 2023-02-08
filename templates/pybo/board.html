@@ -7,13 +7,13 @@
 <body>
 {% extends 'base.html' %}
 {% block content %}
-<a href="{% url 'index' %}"><img src="../static/마실가자.png" alt="..." style="width:200px;"></a>
+<a href="{% url 'common:main' %}"><img src="../static/마실가자.png" alt="..." style="width:200px;"></a>
 <div class="d">
     <div class="btn-group" role="group" aria-label="Basic example"
         style="margin:50px 0px 0px 500px;">
-        <button type="button" class="btn btn-primary">전체</button>
-        <button type="button" class="btn btn-primary">불편사항</button>
-        <button type="button" class="btn btn-primary">추천</button>
+        <button type="button" class="btn" style="background-color:#8FBC8F; color:white;">전체</button>
+        <button type="button" class="btn" style="background-color:#8FBC8F; color:white;">불편사항</button>
+        <button type="button" class="btn" style="background-color:#8FBC8F; color:white;">추천</button>
     </div>
     <div style="margin:50px 0px 0px 0px;">
         <div class="container my-3">
@@ -79,7 +79,7 @@
         {% endif %}
     </ul>
     <!-- 페이징처리 끝 -->
-    <a href="{% url 'pybo:question_create' %}" class="btn btn-primary">질문 등록하기</a>
+    <a href="{% url 'pybo:question_create' %}" class="btn" style="background-color:#8FBC8F; color:white;">질문 등록하기</a>
         </div>
     </div>
 

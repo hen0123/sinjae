@@ -1,14 +1,16 @@
-{% extends 'cal/base.html' %}
 
+{% extends 'cal/base.html' %}
 {% block title %}
-Calendar
+<p style = "text-align:left; width:10px; float:left"><a href="{% url 'common:main' %}"><img src="../../static/마실가자.png" alt="..." style="width:200px;"></a>
+</p>
+<p>calendar</p>
 {% endblock %}
 
 {% block content %}
-<div class="clearfix">
-	<a class="btn btn-info left" href="{% url 'cal:calendar' %}?{{ prev_month }}"> Previous Month </a>
-	<a class="btn btn-info right" href="{% url 'cal:calendar' %}?{{ next_month }}"> Next Month </a>
-	<a class="btn btn-info right" href="{% url 'cal:event_new' %}"> New Event </a>
+<div class="clearfix" style = "margin:50px 0px 10px 0px">
+	<a class="btn left" href="{% url 'cal:calendar' %}?{{ prev_month }}" style="color:white; background-color:#8FBC8F;"> Previous Month </a>
+	<a class="btn right" href="{% url 'cal:calendar' %}?{{ next_month }}" style="color:white; background-color:#8FBC8F;"> Next Month </a>
+	<a class="btn right" href="{% url 'cal:event_new' %}" style="color:white; background-color:#8FBC8F;"> New Event </a>
 </div>
 {{ calendar }}
 {% endblock %}

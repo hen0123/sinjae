@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% extends 'base.html' %}
+{% block content %}
+<p>
+    <a href="{% url 'common:main' %}"><img src="../static/마실가자.png" alt="..." style="width:200px;"></a>
+</p>
+
+<div style=" margin: 100px 0px 0px 410px;">
+    <a href = "{% url 'course:낙산' %}">
+        <div class="btn btn-lg" style="width:180px; height:80px; margin-right: 40px; background-color:#8FBC8F; color:white"  >낙산구간</div>
+    </a>
+    <a href = "{% url 'course:남산' %}">
+        <div class="btn btn-lg" style="width:180px; height:80px; margin-right: 40px; background-color:#8FBC8F; color:white">남산구간</div>
+    </a>
+    <a href = "{% url 'course:백악' %}">
+    <div class="btn btn-lg" style="width:180px; height:80px; margin-right: 40px; background-color:#8FBC8F; color:white">백악구간</div>
+    </a>
+
+</div>
+<div>
+    <div class="btn btn-secondary btn-lg" style="margin: 0px 0px 0px 200px">< prev</div>
+    <div class="btn btn-secondary btn-lg" style="margin: 0px 0px 0px 850px">next ></div>
+</div>
+<div style="margin: 0px 0px 0px 410px;">
+    <a href = "{% url 'course:숭례문' %}">
+        <div class="btn btn-lg" style="width:180px; height:80px; margin-right: 40px; background-color:#8FBC8F; color:white">숭례문구간</div>
+    </a>
+    <a href = "{% url 'course:인왕산' %}">
+        <div class="btn btn-lg" style="width:180px; height:80px; margin-right: 40px; background-color:#8FBC8F; color:white">인왕산구간</div>
+    </a>
+    <a href = "{% url 'course:흥인지문' %}">
+        <div class="btn btn-lg" style="width:180px; height:80px; margin-right: 40px; background-color:#8FBC8F; color:white">홍인지문구간</div>
+    </a>
+</div>
+{% endblock %}
+</body>
+</html>

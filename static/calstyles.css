@@ -32,6 +32,13 @@
 }
 
 /* App styles */
+
+body {
+    width: 70%;
+    margin: 0 auto;
+}
+
+
 .title {
     text-align: center;
     margin: 10px;

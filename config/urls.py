@@ -24,6 +24,7 @@ urlpatterns = [
     path('common/', include('common.urls')),
     path('pybo/', include('pybo.urls')),
     path('', views.index, name='index'),
-    path(r'^calendar/$', include('cal.urls')),
-    path('map/', include('map.urls')),
+    path('calendar', include('cal.urls')),
+    path('tema/', include('tema.urls')),
+    path('course/', include('course.urls'))
 ]
