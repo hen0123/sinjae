@@ -23,4 +23,3 @@ class Path(models.Model):  # 구간
     detail = models.TextField()  # 위치(경로)
     distance = models.CharField(max_length=10)  # 길이
     time = models.CharField(max_length=10)  # 시간
-    position = models.TextField()  # 위치

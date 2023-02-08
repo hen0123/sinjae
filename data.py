@@ -53,20 +53,7 @@ for name in road_name:
             data.append([road[0],road[1],road[2],road[3],road[4]]) # 테마명, 구간명, 세부코스, 길이, 시간
             break
 
-position = {}
-point = []
 
-for d in data:
-    for json in json_data['DATA']:
-        if d[1] == json['course_name']:
-            point.append((json['x'], json['y']))
-    position[d[1]] = point
-    point = []
-
-
-
-for d in data:
-    d.append(position[d[1]])
 
 count = 1
 for i in range(1,len(theme)+1):
@@ -79,6 +66,5 @@ for i in range(1,len(theme)+1):
                 detail = d[2],
                 distance = d[3],
                 time = d[4],
-                position = d[5],
             )
             count+=1
