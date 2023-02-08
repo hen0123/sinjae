@@ -16,6 +16,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path,include
 from common import views
+from django.conf import settings
+from django.conf.urls.static import static
 
 app_name = 'config'
 
@@ -27,4 +29,4 @@ urlpatterns = [
     path('calendar', include('cal.urls')),
     path('tema/', include('tema.urls')),
     path('course/', include('course.urls'))
-]
+]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

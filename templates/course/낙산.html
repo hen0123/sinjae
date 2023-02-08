@@ -10,12 +10,35 @@
     <a href="{% url 'index' %}"><img src="../../static/마실가자.png" alt="..." style="width:200px;"></a>
     <a href="{% url 'tema:tema1' %}"><div class="btn btn-secondary btn-lg" style="display:block; margin: 10px 0px 0px 10px; width:100px; height:45px;">< prev</div>
     </a>
-        <div style ="margin:auto">
-        <div id='map' style="width:750px; margin:auto;">
+
+        <div id='map' style="width:850px; float:left; margin: 50px 0px 10px 110px;" >
             {{map|safe}}
         </div>
-    </div>
+<div style="float:right;">
+  <p style = "font-weight: bold; font-size : 2.0em ;  margin:70px 0px 30px 0px;"><img style = "width:50px; height:50px" src="../../static/image/한양도성.png"> 낙산구간 <img style = "width:50px; height:50px" src="../../static/image/한양도성.png"> </p>
+  <div class="form-group" style="width:400px; margin:0px 150px 0px 0px;">
+      {% for h in hanyang %}
+        {% if h.p_name == "낙산구간" %}
+            <div class="form-group" style="width:350px; margin:0px 250px 0px 0px;">
+            <label for="exampleFormControlInput1"><span style="font-weight: bold;">구간이름: </span></label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder=  {{h.p_name}} readonly>
+            </div>
+            <div class="form-group" style="width:350px; margin:0px 250px 0px 0px;">
+            <label for="exampleFormControlInput1"><span style="font-weight: bold;">세부경로: </span></label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder=  {{h.detail}} readonly>
+            </div>
+            <div class="form-group" style="width:350px; margin:0px 250px 0px 0px;">
+            <label for="exampleFormControlInput1"><span style="font-weight: bold;">길이: </span></label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder= {{h.distance}} readonly>
+            </div>
+            <div class="form-group" style="width:350px; margin:0px 250px 0px 0px;">
+            <label for="exampleFormControlInput1"><span style="font-weight: bold;">시간: </span></label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder= {{h.time}} readonly>
+            </div>
+        {% endif %}
+      {% endfor %}
+</div>
+
     {% endblock %}
   </body>
 </html>
-

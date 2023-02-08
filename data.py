@@ -5,7 +5,8 @@ import django
 django.setup() # cmd python manage.py shell
 
 import json
-from pybo.models import Thema,Path
+from tema.models import Thema
+from course.models import Path
 
 theme = ['한양도성길', '생태문화길', '한강지천길/계절길', '서울둘레길']
 

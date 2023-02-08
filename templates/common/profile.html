@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% block title %}Profile Page{% endblock title %}
+{% block content %}
+    <div class="profilediv" style="text-align:center;">
+        <img class="profileimg" src="{{ user.profile.avatar.url }} "
+             style="cursor: pointer; margin:auto 0; padding:0; width:200px; height:200px"/>
+    </div>
+    <div style="text-align:center; color:gray">
+        <span>환영합니다. <b>{{user.username}}</b>님</span><br><br>
+
+    </div>
+    {% if user_form.errors %}
+        <div class="alert alert-danger alert-dismissible" role="alert">
+            <div id="form_errors">
+                {% for key, value in user_form.errors.items %}
+                    <strong>{{ value }}</strong>
+                {% endfor %}
+            </div>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    {% endif %}
+    <div class="profileform">
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="form-row">
+                <div class="col-md-5" style="margin:0 auto;">
+                    <div class="form-group">
+
+                        <label class="small mb-1">이메일:</label>
+                            {{ user_form.email }}
+                        <label class="small mb-1">이름:</label>
+                            {{ user_form.name }}
+                        <label class="small mb-1">주소:</label>
+                            {{ user_form.address }}
+                        <label class="small mb-1">전화번호:</label>
+                            {{ user_form.phone }}
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <a href="#">비밀번호 변경하기</a>
+                        <hr>
+                        <label class="small mb-1">프로필 사진 변경:</label>
+                        {{ profile_form.avatar }}
+                    </div>
+
+                </div>
+            </div>
+            <br><br>
+            <div class="profilebutton" style="text-align:center;">
+                <button type="submit" class="btn btn-dark btn-lg" style="background-color:#a3cca3; border:none;">회원정보 변경</button>
+                <button type="reset" class="btn btn-dark btn-lg" style="background-color:#a3cca3; border:none;">초기화</button>
+            </div>
+        </form>
+    </div>
+{% endblock content %}
