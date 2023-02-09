@@ -4,42 +4,52 @@
 <html lang="en">
   <head>
       <title>인왕산</title>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
   </head>
   <body>
-
     {% block content %}
     <a href="{% url 'index' %}"><img src="../../static/마실가자.png" alt="..." style="width:200px;"></a>
-    <a href="{% url 'tema:tema1' %}"><div class="btn btn-secondary btn-lg" style="display:block; margin: 10px 0px 0px 10px; width:100px; height:45px;">< prev</div>
-    </a>
-
-        <div id='map' style="width:850px; float:left; margin: 50px 0px 10px 110px;" >
-            {{map|safe}}
-        </div>
-<div style="float:right;">
-  <p style = "font-weight: bold; font-size : 2.0em ;  margin:70px 0px 30px 0px;"><img style = "width:50px; height:50px" src="../../static/image/한양도성.png"> 인왕산구간 <img style = "width:50px; height:50px" src="../../static/image/한양도성.png"> </p>
-  <div class="form-group" style="width:400px; margin:0px 150px 0px 0px;">
-      {% for h in hanyang %}
-        {% if h.p_name == "인왕산구간" %}
-            <div class="form-group" style="width:350px; margin:0px 250px 0px 0px;">
-            <label for="exampleFormControlInput1"><span style="font-weight: bold;">구간이름: </span></label>
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder=  {{h.p_name}} readonly>
-            </div>
-            <div class="form-group" style="width:350px; margin:0px 250px 0px 0px;">
-            <label for="exampleFormControlInput1"><span style="font-weight: bold;">세부경로: </span></label>
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder=  {{h.detail}} readonly>
-            </div>
-            <div class="form-group" style="width:350px; margin:0px 250px 0px 0px;">
-            <label for="exampleFormControlInput1"><span style="font-weight: bold;">길이: </span></label>
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder= {{h.distance}} readonly>
-            </div>
-            <div class="form-group" style="width:350px; margin:0px 250px 0px 0px;">
-            <label for="exampleFormControlInput1"><span style="font-weight: bold;">시간: </span></label>
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder= {{h.time}} readonly>
-            </div>
-        {% endif %}
-      {% endfor %}
+    <hr>
+    <a href="{% url 'tema:tema1' %}"><div class="btn btn-secondary btn-lg" style="display:block; margin: 10px 0px 0px 10px; width:100px; height:45px;">< prev</div></a>
+    <div id='map' style="width:850px; float:left; margin: 50px 0px 10px 110px;" >
+        {{map|safe}}
     </div>
-</div>
+    <div style="float:right;">
+      <p style = "font-weight: bold; font-size : 2.0em ;  margin:70px 0px 30px 0px;"><img style = "width:50px; height:50px" src="../../static/image/한양도성.png"> 인왕산구간 <img style = "width:50px; height:50px" src="../../static/image/한양도성.png"> </p>
+      <div class="form-group" style="width:400px; margin:0px 130px 0px 0px;">
+          {% for h in hanyang %}
+            {% if h.p_name == "인왕산구간" %}
+                <div class="form-group" style="width:350px; margin:0px 250px 0px 0px;">
+                <label for="exampleFormControlInput1"><span style="font-weight: bold;">구간이름: </span></label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder=  {{h.p_name}} readonly>
+                </div>
+                <div class="form-group" style="width:350px; margin:0px 250px 0px 0px;">
+                <label for="exampleFormControlInput1"><span style="font-weight: bold;">세부경로: </span></label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder=  {{h.detail}} readonly>
+                </div>
+                <div class="form-group" style="width:350px; margin:0px 250px 0px 0px;">
+                <label for="exampleFormControlInput1"><span style="font-weight: bold;">길이: </span></label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder= {{h.distance}} readonly>
+                </div>
+                <div class="form-group" style="width:350px; margin:0px 250px 0px 0px;">
+                <label for="exampleFormControlInput1"><span style="font-weight: bold;">시간: </span></label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder= {{h.time}} readonly>
+                </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+    </div>
+    <div style = "clear:both">
+         <hr>
+    <div style="text-align:center; font-size:12px;">
+        <B style = "font-size:16px">CONTACT US&nbsp;&nbsp;&nbsp;</B>
+        <i class="bi bi-instagram"></i> Traveler  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <i class="bi bi-telephone-fill"></i> 02-571-0801 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="{% url 'secret'%}"><i class="bi bi-house-door-fill"></i></a> masil@site.com
+    </div>
+    <br>
+    <p style = "text-align:center">Copyright ⓒ2023 Traveler.&nbsp;All Rights Reserved.</p>
+    </div>
     {% endblock %}
   </body>
 </html>

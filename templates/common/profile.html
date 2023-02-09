@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% block title %}Profile Page{% endblock title %}
 {% block content %}
+<a href="{% url 'common:main' %}"><img src="../../static/마실가자.png" alt="..." style="width:200px;"></a>
     <div class="profilediv" style="text-align:center;">
         <img class="profileimg" src="{{ user.profile.avatar.url }} "
              style="cursor: pointer; margin:auto 0; padding:0; width:200px; height:200px"/>
@@ -47,11 +48,12 @@
 
                 </div>
             </div>
-            <br><br>
+            <br>
             <div class="profilebutton" style="text-align:center;">
                 <button type="submit" class="btn btn-dark btn-lg" style="background-color:#a3cca3; border:none;">회원정보 변경</button>
-                <button type="reset" class="btn btn-dark btn-lg" style="background-color:#a3cca3; border:none;">초기화</button>
+                <button type="reset" class="btn btn-dark btn-lg" style="background-color:#a3cca3; border:none; ">초기화</button>
             </div>
+            <br>
         </form>
     </div>
 {% endblock content %}

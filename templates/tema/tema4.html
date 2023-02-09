@@ -2,29 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>한강지천길</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
 </head>
 <body>
 {% extends 'base.html' %}
 {% block content %}
 <p>
     <a href="{% url 'common:main' %}"><img src="../../static/마실가자.png" alt="..." style="width:200px;"></a>
+    <hr>
 </p>
 
-<div style=" margin: 100px 0px 0px 410px;">
-    <div class="btn btn-lg" style="width:180px; height:80px; margin-right: 40px; background-color:#8FBC8F; color:white" >구간</div>
-    <div class="btn btn-lg" style="width:180px; height:80px; margin-right: 40px; background-color:#8FBC8F; color:white">구간</div>
-    <div class="btn btn-lg" style="width:180px; height:80px; margin-right: 40px; background-color:#8FBC8F; color:white">구간</div>
+<div style=" margin: 150px 0px 0px 410px;">
+    <div class="btn btn-lg" style="width:180px; height:80px; margin-right: 40px; background-color:#8FBC8F; color:white;line-height:60px; font-size :17px" >강남서초한강길</div>
+    <div class="btn btn-lg" style="width:180px; height:80px; margin-right: 40px; background-color:#8FBC8F; color:white;line-height:60px; font-size :17px">성동광진구한강길</div>
+    <div class="btn btn-lg" style="width:180px; height:80px; margin-right: 40px; background-color:#8FBC8F; color:white;line-height:60px; font-size :17px">마포한강길</div>
 </div>
 <div>
     <a href="{% url 'tema:tema3' %}"><div class="btn btn-secondary btn-lg" style="margin: 0px 0px 0px 200px">생태문화길</div>
-
+    </a>
 </div>
 <div style="margin: 0px 0px 0px 410px;">
-    <div class="btn btn-lg" style="width:180px; height:80px; margin-right: 40px; background-color:#8FBC8F; color:white">구간</div>
-    <div class="btn btn-lg" style="width:180px; height:80px; margin-right: 40px; background-color:#8FBC8F; color:white">구간</div>
-    <div class="btn btn-lg" style="width:180px; height:80px; margin-right: 40px; background-color:#8FBC8F; color:white">구간</div>
+    <div class="btn btn-lg" style="width:180px; height:80px; margin-right: 40px; background-color:#8FBC8F; color:white;line-height:60px">용산한강길</div>
+    <div class="btn btn-lg" style="width:180px; height:80px; margin-right: 40px; background-color:#8FBC8F; color:white;line-height:60px; font-size :15px">영등포동작구한강길</div>
+    <div class="btn btn-lg" style="width:180px; height:80px; margin-right: 40px; background-color:#8FBC8F; color:white;line-height:60px;">더보기</div>
 </div>
+<hr style = "margin-top:150px">
+    <div style="text-align:center; font-size:12px;">
+        <B style = "font-size:16px">CONTACT US&nbsp;&nbsp;&nbsp;</B>
+        <i class="bi bi-instagram"></i> Traveler  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <i class="bi bi-telephone-fill"></i> 02-571-0801 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="{% url 'secret'%}"><i class="bi bi-house-door-fill"></i></a> masil@site.com
+    </div>
+    <br>
+    <p style = "text-align:center">Copyright ⓒ2023 Traveler.&nbsp;All Rights Reserved.</p>
 {% endblock %}
 </body>
 </html>

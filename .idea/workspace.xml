@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="acb6fe59-c8ca-480e-b7dc-76c2f5f20837" name="Changes" comment="complete 2">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/image/main_banner_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/image/main_banner_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/image/main_banner_3.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/image/main_banner_4.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/image/main_banner_5.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/image/main_banner_6.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/image/구민.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/image/민규.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/image/연주.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/image/지혜.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/image/창현.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cal/templates/cal/calendar.html" beforeDir="false" afterPath="$PROJECT_DIR$/cal/templates/cal/calendar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cal/templates/cal/event.html" beforeDir="false" afterPath="$PROJECT_DIR$/cal/templates/cal/event.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/common/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/common/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/common/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/common/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/common/secret.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/common/secret.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/course/낙산.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/course/낙산.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/course/남산.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/course/남산.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/course/백악.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/course/백악.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/course/숭례문.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/course/숭례문.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/course/인왕산.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/course/인왕산.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/course/흥인지문.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/course/흥인지문.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pybo/board.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pybo/board.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/tema/detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/tema/tema1.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/tema/tema1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/tema/tema2.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/tema/tema2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/tema/tema3.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/tema/tema3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/tema/tema4.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/tema/tema4.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2LTvkDUSp7iXVPy2yQkUmXTqg8l" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\masil\site\static\image" />
+      <recent name="C:\masil\site\templates\common" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="acb6fe59-c8ca-480e-b7dc-76c2f5f20837" name="Changes" comment="" />
+      <created>1675908028859</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1675908028859</updated>
+    </task>
+    <task id="LOCAL-00001" summary="complete 2">
+      <created>1675919524203</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1675919524203</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="complete 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="complete 2" />
+  </component>
+</project>
