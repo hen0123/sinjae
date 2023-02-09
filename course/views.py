@@ -1,6 +1,7 @@
 from django.shortcuts import render
 import folium
 from .models import Path
+from folium.plugins import Draw
 
 # 낙산
 def home1(request):
@@ -19,6 +20,7 @@ def home1(request):
     data['map'] = t
     hanyang = Path.objects.filter(th_no=1)
     data['hanyang'] = hanyang
+
     return render(request,'course/낙산.html', data)
 
 # 남산

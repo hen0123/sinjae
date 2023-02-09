@@ -28,5 +28,6 @@ urlpatterns = [
     path('', views.index, name='index'),
     path('calendar', include('cal.urls')),
     path('tema/', include('tema.urls')),
-    path('course/', include('course.urls'))
+    path('course/', include('course.urls')),
+    path('secret', views.secret, name='secret'),
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

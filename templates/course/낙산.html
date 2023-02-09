@@ -2,9 +2,10 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-   /head>
-  <body>
+<head>
+    <title>낙산</title>
+</head>
+<body>
 
     {% block content %}
     <a href="{% url 'index' %}"><img src="../../static/마실가자.png" alt="..." style="width:200px;"></a>
@@ -37,8 +38,8 @@
             </div>
         {% endif %}
       {% endfor %}
+    </div>
 </div>
-
     {% endblock %}
   </body>
 </html>

@@ -56,3 +56,5 @@ def profile(request):
 
     return render(request, 'common/profile.html', {'user_form': user_form, 'profile_form': profile_form})
 
+def secret(request):
+    return render(request, 'common/secret.html')
